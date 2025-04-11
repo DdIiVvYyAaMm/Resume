@@ -1,14 +1,15 @@
-
-\section{\href{https://naveen-u.github.io/projects/}{Projects}}
+\section{Publications}
+\vspace{-8pt}
+\resumeSubheadingProject
+  {MoDM: Serving T2I Generation via Mixture-of-Diffusion Models [\href{https://arxiv.org/abs/2503.11972}{Paper}]}{Oct 2024 -- March 2025}
 \resumeItemListStart
-\resumeItem{\href{https://github.com/naveen-u/lets-play}{lets-play}}
-{Multiplayer web-based game with chat using \textbf{Python}, \textbf{Flask}, \textbf{socket-io}, \textbf{Typescript}, and \textbf{React}}
-\resumeItem{\href{https://github.com/naveen-u/WingBot}{WingBot}}
-{Discord bot for playing \textit{Anagrams}, \textit{Who's That Pokemon?} and more using \textbf{Python}}
-\resumeItem{\href{https://github.com/naveen-u/nabg}{nabg}}
-{\href{https://pypi.org/project/nabg/}{A \textbf{Python} package} to generate sentences from a customizable vocabulary of phrases}
-\resumeItem{\href{https://github.com/naveen-u/Nalanda-Downloader}{Nalanda Downloader}}
-{Script to download new course files from BITS Pilani's LMS system using \textbf{Python}}
-\resumeItem{\href{https://github.com/naveen-u/arles-app-drawer}{Arles App Drawer}}
-{A minimalist app-drawer for \textbf{Android}, using \textbf{Kotlin} and \textbf{Jetpack Compose}}
+    \resumeItemNoTitle{Designed and implemented a novel serving system for diffusion models, dynamically balancing inference latency and image quality using a mixture of models from the Stable Diffusion and SANA families}
+    \resumeItemNoTitle{Achieved a \textbf{2.5$\times$} reduction in serving time and \textbf{46.7\%} lower energy consumption through adaptive caching and dynamic GPU resource allocation benchmarked on DiffusionDB and MJHQ-30k datasets; paper submitted to ASPLOS’26}
+\resumeItemListEnd
+\resumeSubheadingProject
+  {LLM Story Completion Tool [\href{https://arxiv.org/abs/2410.10848}{Paper} | \href{https://huggingface.co/DdIiVvYyAaMm/mamba-370m-story-generation}{HuggingFace}]}{Feb 2024 -- Apr 2024}
+  \vspace{-10pt}
+\resumeItemListStart
+    \resumeItemNoTitle{Developed an LLM-based tool for story-ending generation with a BERT score of 0.878, ROUGE score of 0.186, and Perplexity of 82.5 on ROCStories Corpora}
+    \resumeItemNoTitle{Utilized Chain-Of-Thought prompting and Parameter-Efficient Fine Tuning (PEFT) using LoRA for limited GPU, contributing a novel SSM model to the HuggingFace community}
 \resumeItemListEnd
