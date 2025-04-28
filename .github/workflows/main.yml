@@ -2,7 +2,7 @@ name: Build and release LaTeX documents
 on:
   push:
     branches:
-      - "main"
+      - "DE"
 permissions:
   contents: write
 jobs:
