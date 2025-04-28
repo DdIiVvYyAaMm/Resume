@@ -1,10 +1,24 @@
-\section{Publications}
+\section{Publications/Open Source Contributions}
 \vspace{-8pt}
+% \resumeSubheadingProject
+% {Airline Operational Efficiency Optimization}{Dec 2024 -- Feb 2025}
+%   \vspace{-10pt}
+% \resumeItemListStart
+%     \resumeItemNoTitle{Developed and deployed optimization models using Linear Programming (LP) and Mixed Integer Programming (MIP) techniques to simulate airline scheduling and resource allocation}
+%     \resumeItemNoTitle{Built predictive analytics tools using historical flight data (FlightAware) to minimize delays and optimize turnaround times, demonstrating potential efficiency improvements of up to 15\% and created interactive operational Tableau reports}
+% \resumeItemListEnd
+\resumeSubheadingProject
+{Integrated Energy Optimizer into Megatron-LM [\href{https://github.com/DdIiVvYyAaMm/zeus-profiler/tree/zeus-energy-profiler}{GitHub} | \href{https://symbioticlab.org/}{Symbiotic Lab}]}{Jan 2025 -- Apr 2025}
+\vspace{-10pt}
+\resumeItemListStart
+    \resumeItemNoTitle{Integrated an Energy Optimizer into \href{https://github.com/ml-energy/zeus}{Zeus} as the Pipeline Frequency Optimizer (PFO), implementing dynamic GPU frequency scheduling via runtime profiling to significantly reduce energy usage without compromising training throughput}
+    \resumeItemNoTitle{Developed robust client-server POST endpoints for per-instruction energy and timing profiling, designed energy polling loop, and monkey-patched Zeus into Megatron-LM for seamless, fork-free compatibility across future versions}
+\resumeItemListEnd
 \resumeSubheadingProject
   {MoDM: Serving T2I Generation via Mixture-of-Diffusion Models [\href{https://arxiv.org/abs/2503.11972}{Paper}]}{Oct 2024 -- March 2025}
 \resumeItemListStart
     \resumeItemNoTitle{Designed and implemented a novel serving system for diffusion models, dynamically balancing inference latency and image quality using a mixture of models from the Stable Diffusion and SANA families}
-    \resumeItemNoTitle{Achieved a \textbf{2.5$\times$} reduction in serving time and \textbf{46.7\%} lower energy consumption through adaptive caching and dynamic GPU resource allocation benchmarked on DiffusionDB and MJHQ-30k datasets; paper submitted to ASPLOS’26}
+    \resumeItemNoTitle{Achieved a 2.5$\times$ reduction in serving time and 46.7\% lower energy consumption through adaptive caching and dynamic GPU resource allocation benchmarked on DiffusionDB and MJHQ-30k datasets; paper submitted to ASPLOS’26}
 \resumeItemListEnd
 \resumeSubheadingProject
   {LLM Story Completion Tool [\href{https://arxiv.org/abs/2410.10848}{Paper} | \href{https://huggingface.co/DdIiVvYyAaMm/mamba-370m-story-generation}{HuggingFace}]}{Feb 2024 -- Apr 2024}
@@ -13,10 +27,5 @@
     \resumeItemNoTitle{Developed an LLM-based tool for story-ending generation with a BERT score of 0.878, ROUGE score of 0.186, and Perplexity of 82.5 on ROCStories Corpora}
     \resumeItemNoTitle{Utilized Chain-Of-Thought prompting and Parameter-Efficient Fine Tuning (PEFT) using LoRA for limited GPU, contributing a novel SSM model to the HuggingFace community}
 \resumeItemListEnd
-\resumeSubheadingProject
-  {Integrating an Energy Optimizer in Megatron-LM [\href{https://github.com/DdIiVvYyAaMm/zeus-profiler/tree/feature-energy}{GitHub} | \href{https://symbioticlab.org/}{Symbiotic Lab}]}{Dec 2024 -- Present}
-  \vspace{-10pt}
-\resumeItemListStart
-    \resumeItemNoTitle{Integrating \href{https://ml.energy/zeus/research_overview/perseus/}{Perseus}, an energy optimizer, into the Megatron-LM framework, customizing a DAG solver, and implementing profiling to optimize energy usage during pipeline parallelism (PP) and tensor parallelism (TP)}
-    \resumeItemNoTitle{Benchmarking the system on large-scale models such as Llama-3-8B and Mistral-7B, deploying a GPU frequency controller to achieve energy savings while maintaining throughput, with the plan to publish a detailed performance report}
-\resumeItemListEnd
+
+
